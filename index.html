@@ -611,26 +611,66 @@
 <body>
     <div class="bg-animation"></div>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <img src="ChatGPT Image Jan 30, 2026, 04_36_16 PM.png" alt="Best Data Recovery Logo">
-                <strong>Best Data Recovery</strong>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu" id="mobileMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+/* Contact Section */
+#contact {
+    background: linear-gradient(
+        135deg,
+        rgba(0, 217, 255, 0.05),
+        rgba(0, 102, 255, 0.05)
+    );
+    border-radius: 30px;
+    padding: 6rem 3rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--primary);
+    min-width: 50px;
+}
+
+.contact-details h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-details p,
+.contact-details a {
+    color: var(--gray);
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: var(--primary);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
